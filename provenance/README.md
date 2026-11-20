@@ -1,0 +1,3 @@
+# Provenance notes
+
+The repository is curated from the supplied project archive and author-confirmed clarifications. Profile SFT JSON logs retain their recorded metrics and histories; only `best_model_checkpoint` path strings were corrected to match the profile named by each JSON file and its best checkpoint step. Surrogate HPO trial records are transcribed from the archived results workbook; retained per-trial JSON logs are copied as supplied. The main HPO table follows the ten trials retained in the authoritative results workbook. No synthetic trial observations, questionnaire answers, training logs, or checkpoint files have been created.

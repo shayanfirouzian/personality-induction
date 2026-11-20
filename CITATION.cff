@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "The Parametric Soul: Advancing Psychological Realism in LLMs through Multi-Trait Personality Induction via Parametric Adaptation"
+authors:
+  - family-names: Firouzian-Haji
+    given-names: Shayan
+  - family-names: Ramezani
+    given-names: Maryam
+type: software
+version: "1.0.0"
+date-released: 2026-11-18

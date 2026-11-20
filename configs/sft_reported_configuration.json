@@ -1,0 +1,31 @@
+{
+  "starting_checkpoint": "DPO-aligned abliterated Llama 3.1 8B Instruct",
+  "profiles": [
+    "LLL",
+    "LLH",
+    "LHL",
+    "LHH",
+    "HLL",
+    "HLH",
+    "HHL",
+    "HHH"
+  ],
+  "per_profile_training_examples_approx": 27000,
+  "per_profile_validation_examples_approx": 3000,
+  "per_device_train_batch_size": 4,
+  "gradient_accumulation_steps": 32,
+  "effective_batch_size": 128,
+  "learning_rate": 0.000121755410442394,
+  "weight_decay": 0.00538032367701373,
+  "warmup_ratio": 0.15,
+  "lora_rank": 64,
+  "lora_alpha": 128,
+  "lora_dropout": 0.0,
+  "optimizer": "adamw_torch_fused",
+  "precision": "bfloat16",
+  "lr_scheduler": "cosine",
+  "maximum_epochs": 4,
+  "early_stopping_patience": 3,
+  "seed": 3407,
+  "note": "Reported final SFT configuration reconstructed from the manuscript and main-task HPO Trial 5; final SFT execution script and checkpoint weights were not part of the supplied project archive."
+}

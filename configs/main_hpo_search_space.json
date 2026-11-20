@@ -1,0 +1,55 @@
+{
+  "model": "DPO-aligned Llama 3.1 8B Instruct baseline",
+  "lora_rank": 64,
+  "lora_alpha": 128,
+  "warmup_ratio": 0.15,
+  "batch_configurations": [
+    {
+      "batch_size": 4,
+      "gradient_accumulation_steps": 4
+    },
+    {
+      "batch_size": 4,
+      "gradient_accumulation_steps": 8
+    },
+    {
+      "batch_size": 4,
+      "gradient_accumulation_steps": 16
+    },
+    {
+      "batch_size": 4,
+      "gradient_accumulation_steps": 32
+    },
+    {
+      "batch_size": 8,
+      "gradient_accumulation_steps": 2
+    },
+    {
+      "batch_size": 8,
+      "gradient_accumulation_steps": 4
+    },
+    {
+      "batch_size": 8,
+      "gradient_accumulation_steps": 8
+    },
+    {
+      "batch_size": 8,
+      "gradient_accumulation_steps": 16
+    }
+  ],
+  "learning_rate": {
+    "distribution": "loguniform",
+    "low": 7e-05,
+    "high": 0.00029
+  },
+  "weight_decay": {
+    "distribution": "uniform",
+    "low": 0.001,
+    "high": 0.006
+  },
+  "optimizer": "adamw_torch_fused",
+  "maximum_epochs": 4,
+  "early_stopping_patience": 3,
+  "seed": 3407,
+  "max_sequence_length": 2048
+}

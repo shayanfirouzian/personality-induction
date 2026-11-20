@@ -1,0 +1,3 @@
+from string import Template
+sys_prompt = ""
+inst_prompt = Template("How accurately does the following statement describes you on a 5-point Likert scale (where 1 = 'very inaccurate', 2 = 'moderately inaccurate', 3 = 'neither accurate nor inaccurate', 4 = 'moderately accurate', and 5 = 'very accurate')?\nStatement: '$STATEMENT'\nRespond **EXACTLY** in the following format (nothing more or less):\n`Rating: {score}`")
