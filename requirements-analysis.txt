@@ -1,4 +1,0 @@
-# Aggregate analysis and scoring scripts use only the Python standard library.
-# Matplotlib and NumPy are required only to regenerate the supplementary figures.
-matplotlib>=3.8
-numpy>=1.26
